@@ -19,6 +19,9 @@
 
     land: function() {
         this.passengers.pop();
+        if (this.passengers.length === 0) {
+            this.speed = 0;
+        }
     },
 
     drive: function(newSpeed) {
@@ -34,6 +37,7 @@
         }
     }
  };
+
 
 module.exports = car;
  
